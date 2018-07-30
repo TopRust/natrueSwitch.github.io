@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>yum | 记录每一次的进步</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="YUM常用命令：安装软件包:yum install packageyum localinstall package 从本机目录安装软件包yum groupinstall group 安装某个组件的全部软件包 更新软件包：yum update packageyum check-update 列出所有可更新的软件包yum list updates mysql 查找mysql的更新yum update">
+<meta property="og:type" content="article">
+<meta property="og:title" content="yum">
+<meta property="og:url" content="http://yoursite.com/2018/07/30/yum/index.html">
+<meta property="og:site_name" content="记录每一次的进步">
+<meta property="og:description" content="YUM常用命令：安装软件包:yum install packageyum localinstall package 从本机目录安装软件包yum groupinstall group 安装某个组件的全部软件包 更新软件包：yum update packageyum check-update 列出所有可更新的软件包yum list updates mysql 查找mysql的更新yum update">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-30T05:48:22.378Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="yum">
+<meta name="twitter:description" content="YUM常用命令：安装软件包:yum install packageyum localinstall package 从本机目录安装软件包yum groupinstall group 安装某个组件的全部软件包 更新软件包：yum update packageyum check-update 列出所有可更新的软件包yum list updates mysql 查找mysql的更新yum update">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">记录每一次的进步</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-yum" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/yum/" class="article-date">
+  <time datetime="2018-07-30T05:47:10.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      yum
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="YUM常用命令："><a href="#YUM常用命令：" class="headerlink" title="YUM常用命令："></a>YUM常用命令：</h1><h2 id="安装软件包"><a href="#安装软件包" class="headerlink" title="安装软件包:"></a>安装软件包:</h2><p>yum install package<br>yum localinstall package 从本机目录安装软件包<br>yum groupinstall group 安装某个组件的全部软件包</p>
+<h2 id="更新软件包："><a href="#更新软件包：" class="headerlink" title="更新软件包："></a>更新软件包：</h2><p>yum update package<br>yum check-update 列出所有可更新的软件包<br>yum list updates mysql<em> 查找mysql的更新<br>yum update 更新所有可更新的软件包<br>yum update mysql</em> 更新所有mysql的软件包<br>yum groupupdate group 更新某个组件的所有软件包<br>yum list 列出所有已安装和仓库中可用的软件包<br>yum list available 列出仓库中所有可用的软件包<br>yum list updates 列出仓库中比当前系统更新的软件包<br>yum list installed 列出已安装的软件包<br>yum list recent 列出新加入仓库的软件包<br>yum info 查询软件包信息</p>
+<h2 id="删除软件包："><a href="#删除软件包：" class="headerlink" title="删除软件包："></a>删除软件包：</h2><p>yum remove package<br>yum groupremove group 删除某个组件的全部软件包</p>
+<h2 id="清除软件包"><a href="#清除软件包" class="headerlink" title="清除软件包"></a>清除软件包</h2><p>yum clean packages 清除遗留在缓存里的包文件<br>yum clean metadata 清除遗留在缓存里的元数据<br>yum clean headers 清除遗留在缓存里的头文件<br>yum clean all 清除包文件，元数据，头文件</p>
+<h2 id="搜索软件包："><a href="#搜索软件包：" class="headerlink" title="搜索软件包："></a>搜索软件包：</h2><p>yum search package<br>yum info package 查找一个软件包的信息<br>yum list package 列出包含指定信息的软件包<br>yum list installed 列出已安装的软件包<br>yum list extras 列出不是通过软件仓库安装的软件包<br>yum list <em>ttp</em> 列出标题包含ttp的软件包<br>yum list updates 列出可以更新的软件包</p>
+<h2 id="查找特定文件是由什么软件包提供的："><a href="#查找特定文件是由什么软件包提供的：" class="headerlink" title="查找特定文件是由什么软件包提供的："></a>查找特定文件是由什么软件包提供的：</h2><p>yum whatprovides filename<br>例子:<br>yum whatprovides httpd.conf</p>
+<h2 id="可用选项"><a href="#可用选项" class="headerlink" title="可用选项"></a>可用选项</h2><p>–disalberepo=lib 禁用某个软件仓库<br>–enalberepo=lib 启用某个软件仓库</p>
+<p>-C 禁用使用本机缓存的元数据<br>例子:<br>yum –disalberepo=livna|–enalberepo=livna install mplayer<br>yum -C info httpd</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/yum/" data-id="cjk7vpzb6000o4nfyj8xim8oe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/30/boost/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">boost</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/30/yum/">yum</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/30/boost/">boost</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/30/java-fx/">java-fx</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/30/vnc/">vnc</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/30/teamviewer/">teamviewer</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Natrue<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

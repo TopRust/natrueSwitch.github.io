@@ -58,10 +58,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-github-blog" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-yum" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/07/30/github-blog/" class="article-date">
-  <time datetime="2018-07-30T01:04:25.000Z" itemprop="datePublished">2018-07-30</time>
+    <a href="/2018/07/30/yum/" class="article-date">
+  <time datetime="2018-07-30T05:47:10.000Z" itemprop="datePublished">2018-07-30</time>
 </a>
     
   </div>
@@ -72,7 +72,88 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/30/github-blog/">github blog</a>
+      <a class="article-title" href="/2018/07/30/yum/">yum</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="YUM常用命令："><a href="#YUM常用命令：" class="headerlink" title="YUM常用命令："></a>YUM常用命令：</h1><h2 id="安装软件包"><a href="#安装软件包" class="headerlink" title="安装软件包:"></a>安装软件包:</h2><p>yum install package<br>yum localinstall package 从本机目录安装软件包<br>yum groupinstall group 安装某个组件的全部软件包</p>
+<h2 id="更新软件包："><a href="#更新软件包：" class="headerlink" title="更新软件包："></a>更新软件包：</h2><p>yum update package<br>yum check-update 列出所有可更新的软件包<br>yum list updates mysql<em> 查找mysql的更新<br>yum update 更新所有可更新的软件包<br>yum update mysql</em> 更新所有mysql的软件包<br>yum groupupdate group 更新某个组件的所有软件包<br>yum list 列出所有已安装和仓库中可用的软件包<br>yum list available 列出仓库中所有可用的软件包<br>yum list updates 列出仓库中比当前系统更新的软件包<br>yum list installed 列出已安装的软件包<br>yum list recent 列出新加入仓库的软件包<br>yum info 查询软件包信息</p>
+<h2 id="删除软件包："><a href="#删除软件包：" class="headerlink" title="删除软件包："></a>删除软件包：</h2><p>yum remove package<br>yum groupremove group 删除某个组件的全部软件包</p>
+<h2 id="清除软件包"><a href="#清除软件包" class="headerlink" title="清除软件包"></a>清除软件包</h2><p>yum clean packages 清除遗留在缓存里的包文件<br>yum clean metadata 清除遗留在缓存里的元数据<br>yum clean headers 清除遗留在缓存里的头文件<br>yum clean all 清除包文件，元数据，头文件</p>
+<h2 id="搜索软件包："><a href="#搜索软件包：" class="headerlink" title="搜索软件包："></a>搜索软件包：</h2><p>yum search package<br>yum info package 查找一个软件包的信息<br>yum list package 列出包含指定信息的软件包<br>yum list installed 列出已安装的软件包<br>yum list extras 列出不是通过软件仓库安装的软件包<br>yum list <em>ttp</em> 列出标题包含ttp的软件包<br>yum list updates 列出可以更新的软件包</p>
+<h2 id="查找特定文件是由什么软件包提供的："><a href="#查找特定文件是由什么软件包提供的：" class="headerlink" title="查找特定文件是由什么软件包提供的："></a>查找特定文件是由什么软件包提供的：</h2><p>yum whatprovides filename<br>例子:<br>yum whatprovides httpd.conf</p>
+<h2 id="可用选项"><a href="#可用选项" class="headerlink" title="可用选项"></a>可用选项</h2><p>–disalberepo=lib 禁用某个软件仓库<br>–enalberepo=lib 启用某个软件仓库</p>
+<p>-C 禁用使用本机缓存的元数据<br>例子:<br>yum –disalberepo=livna|–enalberepo=livna install mplayer<br>yum -C info httpd</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/yum/" data-id="cjk7vpzb6000o4nfyj8xim8oe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-boost" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/boost/" class="article-date">
+  <time datetime="2018-07-30T05:03:09.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/boost/">boost</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wget http://downloads.sourceforge.net/project/boost/boost/1.59.0/boost_1_59_0.tar.bz2</span><br><span class="line">tar xvf boost_1_59_0.tar.bz2</span><br><span class="line"><span class="built_in">cd</span> boost_1_59_0</span><br><span class="line">./bootstrap.sh</span><br><span class="line">./b2 -j32 install cxxflags=<span class="string">"-I<span class="variable">$HOME</span>/anaconda3/include/python3.6m"</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/boost/" data-id="cjk7vpza800044nfynyfxmg89" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-java-fx" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/java-fx/" class="article-date">
+  <time datetime="2018-07-30T03:16:07.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/java-fx/">java-fx</a>
     </h1>
   
 
@@ -84,7 +165,267 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/30/github-blog/" data-id="cjk7ltn4y0006bafyemb4frxr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/30/java-fx/" data-id="cjk7vpzar000d4nfy9yb17h5c" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-vnc" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/vnc/" class="article-date">
+  <time datetime="2018-07-30T03:06:26.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/vnc/">vnc</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/vnc/" data-id="cjk7vpzb5000n4nfy14gc5x7u" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-teamviewer" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/teamviewer/" class="article-date">
+  <time datetime="2018-07-30T03:06:16.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/teamviewer/">teamviewer</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://download.teamviewer.com/download/version_12x/teamviewer.i686.rpm" target="_blank" rel="noopener">downlaod page</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y localinstall teamviewer*.rpm</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/teamviewer/" data-id="cjk7vpzb3000m4nfy8b9rmpoo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-alias-command" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/alias-command/" class="article-date">
+  <time datetime="2018-07-30T03:05:51.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/alias-command/">alias command</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="添加自定义命令"><a href="#添加自定义命令" class="headerlink" title="添加自定义命令"></a>添加自定义命令</h1><p>编辑<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias anapy=&quot;export PATH=&quot;/home/natrue/anaconda3/bin:$PATH&quot;&quot;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/alias-command/" data-id="cjk7vpz9r00004nfy4w56fv4w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-pycharm" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/pycharm/" class="article-date">
+  <time datetime="2018-07-30T02:50:16.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/pycharm/">pycharm</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener">download page</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/pycharm/" data-id="cjk7vpzav000g4nfyhgteuzyq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-tar-gz" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/tar-gz/" class="article-date">
+  <time datetime="2018-07-30T02:45:01.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/tar-gz/">tar.gz</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf ***.tar.gz</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/tar-gz/" data-id="cjk7vpzb0000k4nfyjsnkmljs" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-tar-xz" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/tar-xz/" class="article-date">
+  <time datetime="2018-07-30T02:32:55.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/tar-xz/">tar.xz</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvJf  ***.tar.xz</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/tar-xz/" data-id="cjk7vpzb2000l4nfysl9kvqy7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-requirements-txt" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/requirements-txt/" class="article-date">
+  <time datetime="2018-07-30T02:17:08.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/requirements-txt/">requirements.txt</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="生成requirements-txt"><a href="#生成requirements-txt" class="headerlink" title="生成requirements.txt"></a>生成requirements.txt</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip freeze &gt; requirements.txt</span><br></pre></td></tr></table></figure>
+<h1 id="安装requirements-txt依赖"><a href="#安装requirements-txt依赖" class="headerlink" title="安装requirements.txt依赖"></a>安装requirements.txt依赖</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/requirements-txt/" data-id="cjk7vpzaw000h4nfy5ufdhokk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -95,6 +436,11 @@
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -125,7 +471,23 @@
       <ul>
         
           <li>
-            <a href="/2018/07/30/github-blog/">github blog</a>
+            <a href="/2018/07/30/yum/">yum</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/30/boost/">boost</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/30/java-fx/">java-fx</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/30/vnc/">vnc</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/30/teamviewer/">teamviewer</a>
           </li>
         
       </ul>
