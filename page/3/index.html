@@ -58,6 +58,358 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-shortcut" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/shortcut/" class="article-date">
+  <time datetime="2018-07-30T02:13:30.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/shortcut/">shortcut</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">alt+t terminal</span><br><span class="line">alt+c chrome</span><br><span class="line">alt+p pycharm</span><br><span class="line">alt+e eclipse</span><br><span class="line">alt+l lantern</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/shortcut/" data-id="cjkp9uz68000wbvfy4c7uvb7g" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-grub" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/grub/" class="article-date">
+  <time datetime="2018-07-30T02:10:47.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/grub/">grub</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://git.savannah.gnu.org/grub.git</span><br></pre></td></tr></table></figure>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">./linguas.sh</span><br><span class="line">./autogen.sh</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<h1 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub-mkconfig -o /boot/grub/grub.cfg</span><br></pre></td></tr></table></figure>
+<h1 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/grub/" data-id="cjkp9uz5q000kbvfy18nvpdt1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-sogou" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/sogou/" class="article-date">
+  <time datetime="2018-07-30T01:57:33.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/sogou/">sogou</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://pinyin.sogou.com/linux/?r=pinyin" target="_blank" rel="noopener">download page</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install fcitx fcitx-pinyin fcitx-configtool</span><br><span class="line">sudo yum -y install dpkg</span><br><span class="line">ar vx sogoupinyin_1.2.0.0042_amd64.deb</span><br><span class="line">tar -Jxvf data.tar.xz  -C /</span><br><span class="line">sudo cp /usr/lib/x86_64-linux-gnu/fcitx/fcitx-sogoupinyin.so  /usr/lib64/fcitx/</span><br><span class="line">fcitx</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/sogou/" data-id="cjkp9uz6a000xbvfyibkthqa8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-opencv" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/opencv/" class="article-date">
+  <time datetime="2018-07-30T01:55:33.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/opencv/">opencv</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">anapy</span><br><span class="line">conda install opencv</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/opencv/" data-id="cjkp9uz63000sbvfynme1te4u" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-cupy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/cupy/" class="article-date">
+  <time datetime="2018-07-30T01:46:27.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/cupy/">cupy</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">anapy</span><br><span class="line">pip install cupy</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/cupy/" data-id="cjkp9uz5d000cbvfyi3ohp3el" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-chainer" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/chainer/" class="article-date">
+  <time datetime="2018-07-30T01:46:08.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/chainer/">chainer</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://github.com/chainer/chainer/releases" target="_blank" rel="noopener">download page</a></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>下载最新版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install chainer*.tar.gz</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/chainer/" data-id="cjkp9uz550009bvfyr5t18kp5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-boost-numpy" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/boost-numpy/" class="article-date">
+  <time datetime="2018-07-30T01:45:49.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/boost-numpy/">boost.numpy</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://github.com/ndarray/Boost.NumPy/tree/26aaa5b62e6170f2ccde179b46f1a49c4011fc9d" target="_blank" rel="noopener">download</a></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/ndarray/Boost.NumPy.git</span><br><span class="line"><span class="built_in">cd</span> Boost.NumPy &amp;&amp; mkdir build &amp;&amp; <span class="built_in">cd</span> build</span><br><span class="line">cmake -DPYTHON_LIBRARY=<span class="variable">$HOME</span>/anaconda3/lib/libpython3.6m.so ../</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/boost-numpy/" data-id="cjkp9uz4z0006bvfyqc5yh9cr" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-anaconda3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/anaconda3/" class="article-date">
+  <time datetime="2018-07-30T01:44:52.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/anaconda3/">anaconda3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://www.anaconda.com/download/#linux" target="_blank" rel="noopener">download page</a></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh Anaconda3*.sh</span><br></pre></td></tr></table></figure>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>因为我的caffe是默认安装的，它的protobuf的版本是2.5.0<br>anaconda的安装的是python3，protobuf的版本是3.x<br>protobuf会发生冲突<br>所以不添加路径，选择”no”<br>每次用anaconda3，必须输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"<span class="variable">$HOME</span>/anaconda3/bin:<span class="variable">$PATH</span>"</span></span><br></pre></td></tr></table></figure></p>
+<p>这有点麻烦，解决办法如下．</p>
+<h1 id="添加自定义命令"><a href="#添加自定义命令" class="headerlink" title="添加自定义命令"></a>添加自定义命令</h1><p>编辑<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias anapy=&quot;export PATH=&quot;$HOME/anaconda3/bin:$PATH&quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<h1 id="使用anaconda"><a href="#使用anaconda" class="headerlink" title="使用anaconda"></a>使用anaconda</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">anapy</span><br><span class="line">python</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/anaconda3/" data-id="cjkp9uz4u0003bvfycm1ugmxu" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-caffe" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/30/caffe/" class="article-date">
+  <time datetime="2018-07-30T01:44:36.000Z" itemprop="datePublished">2018-07-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/30/caffe/">caffe</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="General-dependencies"><a href="#General-dependencies" class="headerlink" title="General dependencies"></a>General dependencies</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install protobuf-devel leveldb-devel snappy-devel opencv-devel boost-devel hdf5-devel</span><br></pre></td></tr></table></figure>
+<h1 id="Remaining-dependencies-recent-OS"><a href="#Remaining-dependencies-recent-OS" class="headerlink" title="Remaining dependencies, recent OS"></a>Remaining dependencies, recent OS</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install gflags-devel glog-devel lmdb-devel</span><br><span class="line">sudo yum -y install python2-scikit-image.x86_64</span><br><span class="line">sudo yum -y install python-matplotlib.x86_64</span><br><span class="line">sudo yum -y install python-pip</span><br><span class="line">sudo yum -y install opencv-python</span><br><span class="line">sudo pip install protobuf==2.5.0</span><br><span class="line">sudo pip install --upgrade pip</span><br><span class="line">sudo yum -y install openblas-devel</span><br></pre></td></tr></table></figure>
+<h1 id="安装cuda"><a href="#安装cuda" class="headerlink" title="安装cuda"></a>安装cuda</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/profile</span><br></pre></td></tr></table></figure>
+<p>enter “shift+g”<br>append<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=/usr/local/cuda-9.2/bin$&#123;PATH:+:$&#123;PATH&#125;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>enter “Esc:wq”</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> /etc/profile</span><br><span class="line">sudo rpm --install ../cuda-repo-*.rpm</span><br><span class="line">sudo yum clean expire-cache</span><br><span class="line">sudo yum -y install cuda</span><br><span class="line">systemctl status nvidia-persistenced</span><br><span class="line">sudo systemctl <span class="built_in">enable</span> nvidia-persistenced</span><br><span class="line">sudo cp /lib/udev/rules.d/40-redhat.rules /etc/udev/rules.d</span><br><span class="line">sudo sed -i <span class="string">'/SUBSYSTEM=="memory", ACTION=="add"/d'</span> /etc/udev/rules.d/40-redhat.rules</span><br><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><p><a href="http://caffe.berkeleyvision.org/" target="_blank" rel="noopener">home page</a><br><a href="https://github.com/BVLC/caffe/" target="_blank" rel="noopener">github page</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bashrc</span><br></pre></td></tr></table></figure></p>
+<p>enter “shift+g”<br>append<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PYTHONPATH=$HOME/Documents/Software/caffe-master/python:$PYTHONPATH</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/BVLC/caffe.git</span><br><span class="line">cp ./Makefile.config ./caffe/Makefile.config</span><br><span class="line"><span class="built_in">cd</span> caffe</span><br><span class="line">make all -j12</span><br><span class="line">make <span class="built_in">test</span> -j12</span><br><span class="line">make runtest -j12</span><br><span class="line">make pycaffe -j12</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/30/caffe/" data-id="cjkp9uz530008bvfywyj4rhan" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-cuda" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/07/30/cuda/" class="article-date">
@@ -88,162 +440,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/30/cuda/" data-id="cjk7vt75f0007e9fysfz2ychc" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-lantern" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/30/lantern/" class="article-date">
-  <time datetime="2018-07-30T01:44:13.000Z" itemprop="datePublished">2018-07-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/30/lantern/">lantern</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="http://www.getlandeng15.org" target="_blank" rel="noopener">home page</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ar -vx ../lantern-installer-preview-64-bit.deb</span><br><span class="line">xz -d ./data.tar.xz</span><br><span class="line">tar -xvf ./data.tar</span><br><span class="line">sudo cp -r ./usr/* /usr</span><br><span class="line">rm -rf ./control.tar.gz ./data.tar ./debian-binary ./usr</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/30/lantern/" data-id="cjk7vt75s000de9fycn9r281e" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-google-chrome" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/30/google-chrome/" class="article-date">
-  <time datetime="2018-07-30T01:43:56.000Z" itemprop="datePublished">2018-07-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/30/google-chrome/">google chrome</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://www.chrome64bit.com/index.php/google-chrome-64-bit-for-linux" target="_blank" rel="noopener">download_page</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudu yum install google-chrome*.rpm</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/30/google-chrome/" data-id="cjk7vt75o000be9fyzrdj0rxu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-epel" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/30/epel/" class="article-date">
-  <time datetime="2018-07-30T01:42:21.000Z" itemprop="datePublished">2018-07-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/30/epel/">epel</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install epel-release</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/30/epel/" data-id="cjk7vt75j0009e9fyvlo5803z" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-github-blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/30/github-blog/" class="article-date">
-  <time datetime="2018-07-30T01:04:25.000Z" itemprop="datePublished">2018-07-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/30/github-blog/">github blog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h1><p><a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener">download page</a><br><a href="https://nodejs.org/dist/v10.7.0/node-v10.7.0-linux-x64.tar.xz" target="_blank" rel="noopener">my version</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tar xvJf  node-*.tar.xz</span><br><span class="line">sudo ln -s <span class="variable">$HOME</span>/Downloads/Software/node-v10.7.0-linux-x64/bin/npx /usr/<span class="built_in">local</span>/bin/npx</span><br><span class="line">sudo ln -s <span class="variable">$HOME</span>/Downloads/node-v10.7.0-linux-x64/bin/npm /usr/<span class="built_in">local</span>/bin/npm</span><br><span class="line">sudo ln -s <span class="variable">$HOME</span>/Downloads/node-v10.7.0-linux-x64/bin/node /usr/<span class="built_in">local</span>/bin/node</span><br></pre></td></tr></table></figure></p>
-<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">home page</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">sudo ln -s <span class="variable">$HOME</span>/Downloads/node-v10.7.0-linux-x64/bin/hexo /usr/<span class="built_in">local</span>/bin/hexo</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"blog title"</span></span><br><span class="line">hexo server</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<h1 id="修改-config-yml文件"><a href="#修改-config-yml文件" class="headerlink" title="修改_config.yml文件"></a>修改_config.yml文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: git@github.com:username/username.github.io.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
-<h1 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/.ssh</span><br><span class="line">ssh-keygen -t rsa -C <span class="string">"邮件地址"</span> <span class="comment"># enter "Enter"</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com <span class="comment"># enter "yes"</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"你的名字"</span> <span class="comment"># 真实名字不是github用户名</span></span><br><span class="line">git config --global user.email <span class="string">"邮箱地址"</span> <span class="comment"># github邮箱</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/30/github-blog/" data-id="cjk7vt75l000ae9fy89gx0tqi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/30/cuda/" data-id="cjkp9uz5b000bbvfynrlomfaz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -257,7 +454,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -276,7 +473,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
     </div>
   </div>
 
@@ -289,23 +486,23 @@
       <ul>
         
           <li>
-            <a href="/2018/07/30/yum/">yum</a>
+            <a href="/2018/08/11/hello-world/">Hello World</a>
           </li>
         
           <li>
-            <a href="/2018/07/30/boost/">boost</a>
+            <a href="/2018/08/08/opencv-geometry-transformation/">opencv geometry transformation</a>
           </li>
         
           <li>
-            <a href="/2018/07/30/java-fx/">java-fx</a>
+            <a href="/2018/08/08/python-shell/">python shell</a>
           </li>
         
           <li>
-            <a href="/2018/07/30/vnc/">vnc</a>
+            <a href="/2018/08/08/numpy-array/">numpy array</a>
           </li>
         
           <li>
-            <a href="/2018/07/30/teamviewer/">teamviewer</a>
+            <a href="/2018/08/08/opencv-lib/">opencv</a>
           </li>
         
       </ul>

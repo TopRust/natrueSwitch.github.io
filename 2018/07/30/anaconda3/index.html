@@ -7,17 +7,17 @@
   
   <title>anaconda3 | 记录每一次的进步</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="download page 安装1sh Anaconda3*.sh 注意因为我的caffe是默认安装的，它的protobuf的版本是2.5.0anaconda的安装的是python3，protobuf的版本是3.xprotobuf会发生冲突所以不添加路径，选择”no”每次用anaconda3，必须输入1export PATH=&quot;/home/natrue/anaconda3/bin:$PATH&quot; 这">
+  <meta name="description" content="download page 安装1sh Anaconda3*.sh 注意因为我的caffe是默认安装的，它的protobuf的版本是2.5.0anaconda的安装的是python3，protobuf的版本是3.xprotobuf会发生冲突所以不添加路径，选择”no”每次用anaconda3，必须输入1export PATH=&quot;$HOME/anaconda3/bin:$PATH&quot; 这有点麻烦，解决">
 <meta property="og:type" content="article">
 <meta property="og:title" content="anaconda3">
 <meta property="og:url" content="http://yoursite.com/2018/07/30/anaconda3/index.html">
 <meta property="og:site_name" content="记录每一次的进步">
-<meta property="og:description" content="download page 安装1sh Anaconda3*.sh 注意因为我的caffe是默认安装的，它的protobuf的版本是2.5.0anaconda的安装的是python3，protobuf的版本是3.xprotobuf会发生冲突所以不添加路径，选择”no”每次用anaconda3，必须输入1export PATH=&quot;/home/natrue/anaconda3/bin:$PATH&quot; 这">
+<meta property="og:description" content="download page 安装1sh Anaconda3*.sh 注意因为我的caffe是默认安装的，它的protobuf的版本是2.5.0anaconda的安装的是python3，protobuf的版本是3.xprotobuf会发生冲突所以不添加路径，选择”no”每次用anaconda3，必须输入1export PATH=&quot;$HOME/anaconda3/bin:$PATH&quot; 这有点麻烦，解决">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-30T06:09:35.113Z">
+<meta property="og:updated_time" content="2018-08-11T07:44:06.065Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="anaconda3">
-<meta name="twitter:description" content="download page 安装1sh Anaconda3*.sh 注意因为我的caffe是默认安装的，它的protobuf的版本是2.5.0anaconda的安装的是python3，protobuf的版本是3.xprotobuf会发生冲突所以不添加路径，选择”no”每次用anaconda3，必须输入1export PATH=&quot;/home/natrue/anaconda3/bin:$PATH&quot; 这">
+<meta name="twitter:description" content="download page 安装1sh Anaconda3*.sh 注意因为我的caffe是默认安装的，它的protobuf的版本是2.5.0anaconda的安装的是python3，protobuf的版本是3.xprotobuf会发生冲突所以不添加路径，选择”no”每次用anaconda3，必须输入1export PATH=&quot;$HOME/anaconda3/bin:$PATH&quot; 这有点麻烦，解决">
   
   
     <link rel="icon" href="/favicon.png">
@@ -84,16 +84,16 @@
       
         <p><a href="https://www.anaconda.com/download/#linux" target="_blank" rel="noopener">download page</a></p>
 <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh Anaconda3*.sh</span><br></pre></td></tr></table></figure>
-<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>因为我的caffe是默认安装的，它的protobuf的版本是2.5.0<br>anaconda的安装的是python3，protobuf的版本是3.x<br>protobuf会发生冲突<br>所以不添加路径，选择”no”<br>每次用anaconda3，必须输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/home/natrue/anaconda3/bin:<span class="variable">$PATH</span>"</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>因为我的caffe是默认安装的，它的protobuf的版本是2.5.0<br>anaconda的安装的是python3，protobuf的版本是3.x<br>protobuf会发生冲突<br>所以不添加路径，选择”no”<br>每次用anaconda3，必须输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"<span class="variable">$HOME</span>/anaconda3/bin:<span class="variable">$PATH</span>"</span></span><br></pre></td></tr></table></figure></p>
 <p>这有点麻烦，解决办法如下．</p>
 <h1 id="添加自定义命令"><a href="#添加自定义命令" class="headerlink" title="添加自定义命令"></a>添加自定义命令</h1><p>编辑<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bashrc</span><br></pre></td></tr></table></figure></p>
-<p>添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias anapy=&quot;export PATH=&quot;/home/natrue/anaconda3/bin:$PATH&quot;&quot;</span><br></pre></td></tr></table></figure></p>
+<p>添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alias anapy=&quot;export PATH=&quot;$HOME/anaconda3/bin:$PATH&quot;&quot;</span><br></pre></td></tr></table></figure></p>
 <h1 id="使用anaconda"><a href="#使用anaconda" class="headerlink" title="使用anaconda"></a>使用anaconda</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">anapy</span><br><span class="line">python</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/30/anaconda3/" data-id="cjk7vt74z0002e9fywp9mdwy7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/30/anaconda3/" data-id="cjkp9uz4u0003bvfycm1ugmxu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -138,7 +138,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li></ul>
     </div>
   </div>
 
@@ -151,23 +151,23 @@
       <ul>
         
           <li>
-            <a href="/2018/07/30/yum/">yum</a>
+            <a href="/2018/08/11/hello-world/">Hello World</a>
           </li>
         
           <li>
-            <a href="/2018/07/30/boost/">boost</a>
+            <a href="/2018/08/08/opencv-geometry-transformation/">opencv geometry transformation</a>
           </li>
         
           <li>
-            <a href="/2018/07/30/java-fx/">java-fx</a>
+            <a href="/2018/08/08/python-shell/">python shell</a>
           </li>
         
           <li>
-            <a href="/2018/07/30/vnc/">vnc</a>
+            <a href="/2018/08/08/numpy-array/">numpy array</a>
           </li>
         
           <li>
-            <a href="/2018/07/30/teamviewer/">teamviewer</a>
+            <a href="/2018/08/08/opencv-lib/">opencv</a>
           </li>
         
       </ul>
